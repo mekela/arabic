@@ -12,12 +12,12 @@
   	}
 
   	.content_imgs {
-  		margin-left: 0;
+  		margin-left: -10px;
   		font-size: 0;
   		a{
-  			margin-right: 3%;
-  			margin-left: 0;
-  			width: 30%;
+  			margin-right: 0;
+  			margin-left: 10px;
+  			width: calc( 33.3% - 10px );
   			box-sizing: border-box;
   			img{
   				width: 100%;
@@ -92,6 +92,35 @@
 	.footer .social{
 		float: right;
 	}
+	
+	img{
+		max-width: 100%;
+	}
+	.content_title nav li{
+		width: 33%;
+	}
+	.footer .social{
+		text-align: center;
+		float: none;
+		a{
+			display: inline-block;
+		}
+	}
+	footer{
+	 .menu ul{
+	 	text-align: center;
+	 	display: block;
+	 	li{
+	 		display: inline-block;
+	 	}
+	 }
+	}
+	.menu li a{
+		padding: 0 10px;
+	}
+}
+
+@include mq($max-width: 740px) {
 	.menu_trigger{
 		padding: 10px ;
 		display: block;
@@ -117,30 +146,7 @@
 		border: none;
 		}
 	}
-	img{
-		max-width: 100%;
-	}
-	.content_title nav li{
-		width: 33%;
-	}
-	.footer .social{
-		text-align: center;
-		float: none;
-		a{
-			display: inline-block;
-		}
-	}
-	footer{
-	 .menu ul{
-	 	text-align: center;
-	 	display: block;
-	 	li{
-	 		display: inline-block;
-	 	}
-	 }
-	}
 }
-
 @include mq($max-width: 500px) {
 	.sidebar, .content{
 		padding: 10px; 
