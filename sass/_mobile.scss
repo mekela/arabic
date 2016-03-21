@@ -15,9 +15,10 @@
   		margin-left: 0;
   		font-size: 0;
   		a{
-  			margin-right: 1%;
+  			margin-right: 3%;
   			margin-left: 0;
   			width: 30%;
+  			box-sizing: border-box;
   			img{
   				width: 100%;
   			}
@@ -71,6 +72,9 @@
 	}
 	.sid_video {
 		text-align: center;
+		img{
+			width: 100%;
+		}
 	}
 	.sid_articles figure{
 		margin: 10px auto;
@@ -91,13 +95,19 @@
 	.menu_trigger{
 		padding: 10px ;
 		display: block;
+		img{
+			position: relative;
+			bottom: 8px;
+		}
 	}
 	.logo{
-		float: none;
+		float: right;
+		margin-left: 20px;
 	}
 	.menu {
 		height: auto;
 		float: none;
+		padding: 25px 30px 0 0;
 		ul{
 			display: none;
 		}
@@ -112,6 +122,22 @@
 	}
 	.content_title nav li{
 		width: 33%;
+	}
+	.footer .social{
+		text-align: center;
+		float: none;
+		a{
+			display: inline-block;
+		}
+	}
+	footer{
+	 .menu ul{
+	 	text-align: center;
+	 	display: block;
+	 	li{
+	 		display: inline-block;
+	 	}
+	 }
 	}
 }
 

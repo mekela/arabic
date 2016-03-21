@@ -85,8 +85,9 @@
 				width: 238px;
 				height: 40px;
 				border: none;
+				padding: 0 15px 0 0;
 				padding-left: 43px;
-				background:#fff url(../img/search.png) no-repeat 10px center;
+				background:#fff url(../img/search.png) no-repeat 15px center;
 			}
  		}
 	
@@ -147,7 +148,43 @@
 			}
 		}
 		.sid_video{
-			margin-bottom: 24px;
+			margin-bottom: 19px;
+			position: relative;
+			overflow: hidden;
+			figure{
+				width: auto;
+				height: auto;
+				@include povh('');
+				margin-bottom: 10px;
+				a{
+					text-decoration: none;
+				}
+				figcaption{
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					width: 100%;
+					color: #fff;
+					font-size: 18px;
+					font-family: $bold;
+					padding: 0 12px 25px 12px;
+					box-sizing: border-box;
+				}
+				&:before{
+					height: 125px;
+					width: 100%;
+					bottom: 0;
+					left: 0;
+					content: '';
+					@include linear-gradient( rgba(0,0,0, 0), rgba(0,0,0, 1));
+					position: absolute;
+
+				}
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+
 		}
 		.sid_articles{
 			border: 1px solid #d9d9d9;
@@ -212,6 +249,9 @@
 				top: 0;
 				height: 60px;
 				z-index: 2;
+				color: #016e01;
+				font-family: $bold;
+				font-size: 18px;
 				&:before{
 					content: url(../img/arrow.png) ;
 					position: absolute;
@@ -350,7 +390,7 @@
 			}
 		}
 		.bottom_txt{
-			font-size: 16px;
+			font-size: 20px;
 			color: #878787;
 			font-family: $bold;
 			text-align: center;
@@ -368,7 +408,7 @@
 	margin-top: 40px;
  	.social{
 		padding: 0;
-		margin: 0 0 0 30px;
+		margin: 0 0 0 20px;
 		float: left;
 		a{
 			display: inline-block;
@@ -387,7 +427,7 @@
  	}
  	.menu{
 		padding: 0;
-		margin: 0 250px 0 0;
+		margin: 0 20px 0 0;
 		height: auto;
 		li{
  			margin: 0px 0 0 0;
